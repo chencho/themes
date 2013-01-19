@@ -2,7 +2,7 @@
 <form action="index.php" method="post">
 	<fieldset>
 		<?php if(!empty($_['redirect'])) { echo '<input type="hidden" name="redirect_url" value="'.$_['redirect'].'" />'; } ?>
-		<?php if($_['error']): ?>
+		<?php if($_['display_lostpassword']): ?>
 			<a href="./core/lostpassword/"><?php echo $l->t('Lost your password?'); ?></a>
 		<?php endif; ?>
 		<p class="infield">
